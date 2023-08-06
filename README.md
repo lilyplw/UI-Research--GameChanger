@@ -22,6 +22,7 @@
 * Tailwind CSS（Preline UIを使うため、調整用）
 * emotion用（Tailwind CSSでは表現できない部分をこちらで補完）
 * Framer Motion（アニメーション）
+* React-icon（アイコン）
 
 ### デプロイ
 * Vercel
