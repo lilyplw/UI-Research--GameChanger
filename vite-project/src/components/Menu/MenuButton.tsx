@@ -15,7 +15,7 @@ const MenuButton = (props: MenuButtonProps) => {
 			onClick={() => setCurrentPage(props.menuName)}
 		>
 			<div
-				className={`mr-1 text-2xl ${
+				className={`mr-0 md:mr-1 text-2xl ${
 					currentPage === props.menuName ? "text-blue-400" : "text-gray-400"
 				}`}
 			>

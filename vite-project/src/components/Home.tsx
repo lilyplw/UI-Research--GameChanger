@@ -9,15 +9,7 @@ const MessagesComponent = () => <div>Messages Component</div>;
 const AccountComponent = () => <div>Account Component</div>;
 
 const Home = () => {
-	// const { currentPage } = useContext(AppContext);
-
-	const context = useContext(AppContext);
-
-	if (!context) {
-		throw new Error("AppContext value is undefined");
-	}
-
-	const { currentPage } = context;
+	const { currentPage } = useContext(AppContext);
 
 	const renderComponent = () => {
 		switch (currentPage) {
