@@ -1,13 +1,12 @@
 import "./App.css";
-import FooterMenu from "./components/Menu/FooterMenu";
-import HeaderMenu from "./components/Menu/HeaderMenu";
+import Home from "./components/Home";
+import { AppProvider } from "./contexts/AppContext";
 
 function App() {
 	return (
-		<>
-			<HeaderMenu />
-			<FooterMenu />
-		</>
+		<AppProvider>
+			<Home />
+		</AppProvider>
 	);
 }
 
