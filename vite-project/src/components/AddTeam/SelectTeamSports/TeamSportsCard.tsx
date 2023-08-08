@@ -18,7 +18,7 @@ const TeamSportsCard = (props: TeamSportType) => {
 			onClick={handleClick}
 		>
 			<div className="text-2xl mx-auto">{props.icon}</div>
-			<p className="text-base font-semibold text-gray-800  text-center">
+			<p className="text-sm font-semibold text-gray-800  text-center">
 				{props.name}
 			</p>
 		</button>

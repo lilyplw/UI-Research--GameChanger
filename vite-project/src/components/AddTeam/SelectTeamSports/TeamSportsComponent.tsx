@@ -3,7 +3,7 @@ import TeamSportsCard from "./TeamSportsCard";
 
 const TeamSportsComponent = () => {
 	return (
-		<div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-6">
+		<div className="grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-8 gap-6">
 			{teamSports.map((teamSport: TeamSportType) => {
 				return <TeamSportsCard name={teamSport.name} icon={teamSport.icon} />;
 			})}

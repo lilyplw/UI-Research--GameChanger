@@ -4,11 +4,10 @@ import { AnimatePresence } from "framer-motion";
 import HeaderMenuHome from "../Menu/HeaderMenuHome";
 import FooterMenu from "../Menu/FooterMenu";
 import Add from "../AddTeam/Add";
-
 import SelectedTeam from "./SelectedTeam";
+import Events from "./Events/Events";
 
 // ダミーデータ
-const EventsComponent = () => <div>Events Component</div>;
 const MessagesComponent = () => <div>Messages Component</div>;
 const AccountComponent = () => <div>Account Component</div>;
 
@@ -31,7 +30,16 @@ const Home = () => {
 	const renderComponent = () => {
 		switch (currentPage) {
 			case "Events":
-				return <EventsComponent />;
+				return (
+					<div className="w-full h-screen bg-slate-200">
+						<div
+							className="max-w-6xl mx-auto pt-20 pb-10 px-4 overflow-y-scroll"
+							style={{ maxHeight: "calc(100vh - 70px)" }}
+						>
+							<Events />
+						</div>
+					</div>
+				);
 			case "Messages":
 				return <MessagesComponent />;
 			case "Account":
