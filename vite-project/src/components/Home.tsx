@@ -1,7 +1,9 @@
 import { useContext } from "react";
 import { AppContext } from "../contexts/AppContext";
-import HeaderMenu from "./Menu/HeaderMenu";
+import { AnimatePresence } from "framer-motion";
+import HeaderMenuHome from "./Menu/HeaderMenuHome";
 import FooterMenu from "./Menu/FooterMenu";
+import Add from "./AddTeam/Add";
 
 const HomeComponent = () => <div>Home Component</div>;
 const EventsComponent = () => <div>Events Component</div>;
@@ -9,15 +11,20 @@ const MessagesComponent = () => <div>Messages Component</div>;
 const AccountComponent = () => <div>Account Component</div>;
 
 const Home = () => {
-	// const { currentPage } = useContext(AppContext);
+	const { currentPage, addTeam } = useContext(AppContext);
 
-	const context = useContext(AppContext);
-
-	if (!context) {
-		throw new Error("AppContext value is undefined");
-	}
-
-	const { currentPage } = context;
+	const renderHeader = () => {
+		switch (currentPage) {
+			case "Events":
+				return <HeaderMenuHome />;
+			case "Messages":
+				return <HeaderMenuHome />;
+			case "Account":
+				return <HeaderMenuHome />;
+			default:
+				return <HeaderMenuHome />;
+		}
+	};
 
 	const renderComponent = () => {
 		switch (currentPage) {
@@ -34,7 +41,8 @@ const Home = () => {
 
 	return (
 		<section className="relative">
-			<HeaderMenu />
+			<AnimatePresence>{addTeam ? <Add /> : ""}</AnimatePresence>
+			<header>{renderHeader()}</header>
 			<main className="mt-20">{renderComponent()}</main>
 			<FooterMenu />
 		</section>
