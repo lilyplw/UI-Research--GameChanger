@@ -1,12 +1,12 @@
-// import { useContext } from "react";
-// import { AppContext } from "../../../contexts/AppContext";
 import { motion } from "framer-motion";
 import TeamSportsComponent from "./TeamSportsComponent";
+import { useNavigate } from "react-router-dom";
 // アイコンのインポート
 import { IoIosArrowBack } from "react-icons/io";
 
 const Add = () => {
-	// const { setAddTeam } = useContext(AppContext);
+	const navigate = useNavigate();
+
 	return (
 		<motion.div
 			initial={{ x: "100vw" }}
@@ -15,7 +15,7 @@ const Add = () => {
 			transition={{ ease: "easeOut", duration: 0.3 }}
 			className="fixed top-0 right-0 left-0 bg-white max-w-6xl mx-auto w-full h-screen z-10"
 		>
-			<button className="p-2 flex items-center">
+			<button className="p-2 flex items-center" onClick={() => navigate("/")}>
 				<IoIosArrowBack className="text-3xl text-blue-400" />
 				<p className="text-blue-400">Back</p>
 			</button>
