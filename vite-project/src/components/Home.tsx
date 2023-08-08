@@ -43,7 +43,7 @@ const Home = () => {
 		<section className="relative">
 			<AnimatePresence>{addTeam ? <Add /> : ""}</AnimatePresence>
 			<header>{renderHeader()}</header>
-			<main className="mt-20">{renderComponent()}</main>
+			<main className="mt-20 max-w-6xl mx-auto">{renderComponent()}</main>
 			<FooterMenu />
 		</section>
 	);
