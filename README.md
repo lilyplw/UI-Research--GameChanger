@@ -23,11 +23,11 @@
 
 - react
 
-### デザイン
+### CSS設計
 
 - Preline UI（UI のメインデザインとして使用）
 - Tailwind CSS（Preline UI を使うため、調整用）
-- emotion 用（Tailwind CSS では表現できない部分をこちらで補完）
+- ~emotion 用（Tailwind CSS では表現できない部分をこちらで補完）~ → 現段階で必要がなさそうなため CSS in JS で対応
 - Framer Motion（アニメーション）
 - React-icons（アイコン）
 
