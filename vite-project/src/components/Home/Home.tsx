@@ -6,9 +6,9 @@ import FooterMenu from "../Menu/FooterMenu";
 import Add from "../AddTeam/Add";
 import SelectedTeam from "./SelectedTeam";
 import Events from "./Events/Events";
+import Messages from "./Messages/Messages";
 
 // ダミーデータ
-const MessagesComponent = () => <div>Messages Component</div>;
 const AccountComponent = () => <div>Account Component</div>;
 
 const Home = () => {
@@ -41,7 +41,16 @@ const Home = () => {
 					</div>
 				);
 			case "Messages":
-				return <MessagesComponent />;
+				return (
+					<div className="w-full h-screen bg-slate-200">
+						<div
+							className="max-w-6xl mx-auto pt-20 pb-10 px-4 overflow-y-scroll"
+							style={{ maxHeight: "calc(100vh - 70px)" }}
+						>
+							<Messages />
+						</div>
+					</div>
+				);
 			case "Account":
 				return <AccountComponent />;
 			default:

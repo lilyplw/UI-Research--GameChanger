@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import AddButton from "./AddButton";
 import AddButton2 from "./AddButton2";
 import { Link } from "react-router-dom";
+// アイコンのインポート
 import { BiPlus, BiBaseball } from "react-icons/bi";
 import { IoCloseOutline } from "react-icons/io5";
 
