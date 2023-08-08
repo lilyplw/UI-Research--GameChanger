@@ -1,4 +1,4 @@
-import { teamSports, TeamSportType } from "../../data/TeamSports";
+import { teamSports, TeamSportType } from "../../../data/TeamSports";
 import TeamSportsCard from "./TeamSportsCard";
 
 const TeamSportsComponent = () => {

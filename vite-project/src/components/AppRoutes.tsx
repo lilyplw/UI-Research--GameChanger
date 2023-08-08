@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import Home from "./Home";
+import Home from "./Home/Home";
 import SelectTeamSports from "./AddTeam/SelectTeamSports/SelectTeamSports";
 
 export const router = createBrowserRouter([
