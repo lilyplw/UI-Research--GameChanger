@@ -24,9 +24,9 @@
 - react
 
 ### 仕様
-- state管理：AppContext
+- state管理：AppContext<br>
   → フッターのタブの切替えはstateにて管理
-- ルーティング：React Router
+- ルーティング：React Router<br>
   → ＋ボタン押下後の追加画面はReact Routerで管理
 
 ### CSS設計
@@ -40,6 +40,12 @@
 ### デプロイ
 
 - Vercel（[デモページ](https://ui-research-game-changer-92rk.vercel.app/)）
+
+### 実装範囲
+
+* タブ機能の実装と各トップページ
+* ホーム画面でのチーム（スポーツ）の選択・追加・表示
+* 上記で選んだチームをメッセージ画面にも表示
 
 ## その他
 
