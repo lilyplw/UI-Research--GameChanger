@@ -51,8 +51,6 @@ export function AppProvider({ children }: AppProviderProps) {
 		setSelectedTeams((prev) => [...prev, team]);
 	};
 
-	console.log(selectedTeams);
-
 	return (
 		<AppContext.Provider
 			value={{

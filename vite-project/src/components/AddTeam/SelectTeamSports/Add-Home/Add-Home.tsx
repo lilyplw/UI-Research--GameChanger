@@ -1,10 +1,13 @@
+import useAlert from "../../../../hooks/useAlert";
 import { Link } from "react-router-dom";
 // アイコンのインポート
 import { BiPlus, BiBaseball } from "react-icons/bi";
 
 const AddHome = () => {
+	const { showAlert, AlertComponent } = useAlert();
 	return (
 		<>
+			<AlertComponent />
 			<p className="mt-2 mb-8 text-2xl text-center font-bold">
 				Ready To Get Started?
 			</p>
@@ -24,22 +27,32 @@ const AddHome = () => {
 					</Link>
 				</li>
 				<li className="inline-flex items-center gap-x-3.5 py-3 px-4 text-sm font-medium bg-white border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg ">
-					<BiBaseball className="text-2xl text-blue-400 mr-2" />
-					<div className="text-left">
-						<p className="text-base font-semibold">Import GC Classic Team</p>
-						<p className="text-sm text-gray-400">
-							Bring team, stats from GameChanger Classic.
-						</p>
-					</div>
+					<button
+						onClick={showAlert}
+						className="inline-flex items-center gap-x-3.5"
+					>
+						<BiBaseball className="text-2xl text-blue-400 mr-2" />
+						<div className="text-left">
+							<p className="text-base font-semibold">Import GC Classic Team</p>
+							<p className="text-sm text-gray-400">
+								Bring team, stats from GameChanger Classic.
+							</p>
+						</div>
+					</button>
 				</li>
 				<li className="inline-flex items-center gap-x-3.5 py-3 px-4 text-sm font-medium bg-white border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg ">
-					<BiBaseball className="text-2xl text-blue-400 mr-2" />
-					<div className="text-left">
-						<p className="text-base font-semibold">Import Sports Connect</p>
-						<p className="text-sm text-gray-400">
-							Import your team's roster and schedule.
-						</p>
-					</div>
+					<button
+						onClick={showAlert}
+						className="inline-flex items-center gap-x-3.5"
+					>
+						<BiBaseball className="text-2xl text-blue-400 mr-2" />
+						<div className="text-left">
+							<p className="text-base font-semibold">Import Sports Connect</p>
+							<p className="text-sm text-gray-400">
+								Import your team's roster and schedule.
+							</p>
+						</div>
+					</button>
 				</li>
 			</ul>
 		</>

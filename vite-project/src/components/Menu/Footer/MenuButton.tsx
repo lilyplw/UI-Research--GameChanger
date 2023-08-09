@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { AppContext } from "../../contexts/AppContext";
+import { AppContext } from "../../../contexts/AppContext";
 
 type MenuButtonProps = {
 	icon: React.ReactNode;
@@ -11,7 +11,7 @@ const MenuButton = (props: MenuButtonProps) => {
 
 	return (
 		<button
-			className="flex flex-col md:flex-row items-center"
+			className="flex flex-col md:flex-row items-center justify-center w-1/4"
 			onClick={() => setCurrentPage(props.menuName)}
 		>
 			<div
