@@ -23,6 +23,12 @@
 
 - react
 
+### 仕様
+- state管理：AppContext
+  → フッターのタブの切替えはstateにて管理
+- ルーティング：React Router
+  → ＋ボタン押下後の追加画面はReact Routerで管理
+
 ### CSS設計
 
 - Preline UI（UI のメインデザインとして使用）
