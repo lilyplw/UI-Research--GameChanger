@@ -15,9 +15,7 @@ const TeamCard = (props: TeamCardProps) => {
 					<div className="text-3xl rounded-full shadow">{props.icon}</div>
 					<div className="grow">
 						<h3 className="text-base font-bold text-gray-800">{props.name}</h3>
-						<p className="mt-2 text-sm uppercase text-gray-800">
-							No messages yet
-						</p>
+						<p className="mt-2 text-sm text-gray-600">No messages yet</p>
 					</div>
 				</div>
 			</button>
